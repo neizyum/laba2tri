@@ -63,42 +63,44 @@ h3{
     margin-top: 56px;
 }
 .menu{
-    width: 644px;
+    width: calc(165px + 160px + 145px + 198px);
     height: 96px;
     background-color: #2e413db6;
     position: relative;
     border-radius:64px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
 }
 .izu{
     height: 280px;
-    padding-top: 48px;
-    padding-bottom: 56px;
+    padding-top: 6px;
+    padding-bottom: 32px;
 }
 
 button{
     border: none;
     height: 96px;
     float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     background-color: rgba(255, 255, 255, 0);
     text-align: center;
 }
 button:hover{
     cursor: pointer;
+    background-color: #00000032;
+    border-radius: 64px;
 }
 .mainm{
-    width: 135px;
+    width: 165px;
 }
 .muz{
-    width: 130px;
+    width: 160px;
 }
 .gam{
-    width: 115px;
+    width: 145px;
 }
 .cont{
-    width: 168px;
+    width: 198px;
 }
 
 .monitor{
