@@ -112,6 +112,12 @@ button:hover{
     color: #e2eeeb;
     line-height: 0;
 }
+.muzbox:hover{
+  animation: fade 400ms ease-out forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 p{
     color: #e2eeeb;
@@ -192,4 +198,19 @@ svg{
 }
 .myname{
     margin-left: 10px;
+}
+@keyframes fade {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+  }
+  100% {
+    transform: scale(1.1); /* Увеличиваем на 10% */
+    box-shadow: 0 0 20px 10px rgba(52, 152, 219, 0);
+  }
+}
+@keyframes name{
+    10%{
+        
+    }
 }
