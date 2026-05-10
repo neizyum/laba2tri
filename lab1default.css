@@ -61,6 +61,8 @@ h3{
 }
 .creds{
     margin-top: 56px;
+        float: right;
+    /* margin-top: 15px; */
 }
 .menu{
     width: calc(165px + 160px + 145px + 198px);
@@ -210,7 +212,7 @@ svg{
   }
 }
 @keyframes name{
-    10%{
-        
+    0%{
+        transform: ;
     }
 }
