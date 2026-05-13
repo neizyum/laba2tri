@@ -2,7 +2,8 @@ html{
     height: 100%;
 }
 body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -77,7 +78,11 @@ h3{
     /* margin-top: 15px; */
 }
 .menu{
-    width: calc(165px + 160px + 145px + 198px);
+    width:60%;
+
+}
+.menu{
+    /* width: calc(165px + 160px + 145px + 198px); */
     height: 96px;
     background-color: #2e413db6;
     position: relative;
@@ -93,6 +98,8 @@ h3{
 button{
     border: none;
     height: 96px;
+    width: fit-content;
+    padding: 20px;
     float: left;
     /* margin-left: 10px;
     margin-right: 10px; */
@@ -104,17 +111,25 @@ button:hover{
     background-color: #00000032;
     border-radius: 64px;
 }
+.menu{
+    width: fit-content;
+    height: 96px;
+    background-color: #2e413db6;
+    position: relative;
+    border-radius:64px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+p{
+    margin: 0;
+}
 .mainm{
-    width: 165px;
-}
-.muz{
-    width: 160px;
-}
-.gam{
-    width: 145px;
+    padding-left: 30px;
 }
 .cont{
-    width: 198px;
+    padding-right: 30px;
 }
 
 .monitor{
@@ -126,7 +141,19 @@ button:hover{
     color: #e2eeeb;
     line-height: 0;
 }
-.muzbox:hover{
+.muzbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding:0;
+    margin-top: 0;
+}
+.muzph{
+    width: 100%;
+}
+.muzph:hover{
   animation: muzfade 400ms ease-out forwards;
   display: flex;
   align-items: center;
@@ -169,42 +196,44 @@ svg{
     display: grid;
     grid-template-columns:auto auto;
 }
-.musii div{
-    padding: 32px;
-    padding-top: 0;
-    width: 750px;
-}
+
 .ppl{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 7px;
 }
 .ppl img{
     margin-left: 32px;
 }
 .singlelink{
-    width: 884px;
+    width: 100%;
     height: 170px;
     background-color: #2e413db6;
     position: relative;
     border-radius:40px;
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .singlelinkinfo{
     display: grid;
-    grid-template-columns: 64px 350px;
+    grid-template-columns: 64px auto;
     float: left;
     margin: 24px;
     row-gap: 10px;
+    flex:1 0;
+}
+.linkbio{
+    width: 60%;
 }
 .sliico{
     text-align: center;
 }
 .linkgo{
-    float: right;
     margin-right: 32px;
     fill: #aaaaaabe;
-    margin-top: 65px;
 }
 .srvs{
     margin: 0;
@@ -224,10 +253,9 @@ svg{
 }
 
 /* Скрыть изображения по умолчанию */
-.mySlides {
-  display: none;
+.mySlides{
+    display: none;
 }
-
 /* Далее иназад кнопки */
 .prev, .next {
   cursor: pointer;
@@ -329,4 +357,70 @@ svg{
     100%{
         height: 30px;
     }
+}
+
+
+@media (max-width: 425px){
+    .musii{
+        grid-template-columns: auto;
+    }
+p{
+    font-size: smaller;
+}
+
+
+.menu{
+    width: fit-content;
+    height: 64px;
+    background-color: #2e413db6;
+    position: relative;
+    border-radius:32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+p{
+    margin: 0;
+}
+button{
+    height: fit-content;
+    width: fit-content;
+    margin: 5px;
+    padding: 0;
+}
+.linkbio{
+    width: 90%;
+}
+.linkgo{
+    margin-right: 5px;
+}
+
+.center{
+ height: 0;}
+footer{
+    grid-template-columns: auto;
+}
+.creds{
+    flex-direction: row;
+    margin-top: 16px;
+}
+.fotani{
+    width: 0;
+    height: 0;
+    animation: none;
+}
+h1{
+    margin-top: 0;
+}
+.imgamer{
+    width: 90%;
+}
+.muzbox:hover{
+    animation: none;
+}
+button:hover{
+    background-color: #00000000;
+}
 }
